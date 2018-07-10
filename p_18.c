@@ -1,20 +1,13 @@
- //Write a program to remove trailing blanks and tabs from each line of input, and to delete entirely blank lines.  .
+ //Write a program to remove blanks and tabs from each line of input, and to delete entirely blank lines.  .
   #include <stdio.h>
   #define LIMIT 500
-
-
-
-   int input(char line[], int maxline);
-   void copy(char to[], char from[]);
-   char all[20][50];
+  int input(char line[], int maxline);
+    char all[20][50];
    void store(int s[]);
-   int j=0;
-  // void print();
- void     main()
+   void     main()
  {
  int len=0;
- int lent;
- char curr[LIMIT];
+  char curr[LIMIT];
  clrscr();
 
 	   while ((len = input(curr, LIMIT)) > 0)
