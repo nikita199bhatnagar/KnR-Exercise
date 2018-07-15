@@ -2,9 +2,8 @@
 . Don't forget to handle quoted strings and character constants properly. C comments don't nest. */
 #include <stdio.h>
   #define LIMIT 500
-   int input(char line[], int maxline);
-   void copy(char to[], char from[]);
-   char longest[LIMIT];
+   int input(char line[]);
+  
  void     main()
  {
  int len=0;
