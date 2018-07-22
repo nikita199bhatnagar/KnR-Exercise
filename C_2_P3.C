@@ -32,7 +32,7 @@ clrscr();
 		else if (str[i]>='a' && str[i]<='f')
 			 res=str[i] - 97 + 10;
 
-		 dec+= res*pow(16,len);
+		 dec=dec+ res*pow(16,len);
 		 len--;
 		}
 		return dec;
