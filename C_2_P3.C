@@ -20,8 +20,8 @@ clrscr();
 
 	  int  htoi(char str[])
 	   {
-	   unsigned long dec=0;
-	   unsigned long res,len,i;
+	   long dec=0;
+	   long res,len,i;
 	 len= strlen(str);
 	 len--;
 	 for (i=0; str[i]!='\0' ;i++)
