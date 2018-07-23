@@ -20,8 +20,8 @@ clrscr();
 
 	  int  htoi(char str[])
 	   {
-	   long dec=0;
-	   long res,len,i;
+	   unsigned long dec=0;
+	   unsigned long res,len,i;
 	 len= strlen(str);
 	 len--;
 	 for (i=0; str[i]!='\0' ;i++)
@@ -32,7 +32,7 @@ clrscr();
 		else if (str[i]>='a' && str[i]<='f')
 			 res=str[i] - 97 + 10;
 
-		 dec=dec+ res*pow(16,len);
+		 dec+= res*pow(16,len);
 		 len--;
 		}
 		return dec;
