@@ -1,13 +1,16 @@
 /* Write a function escape(s,t) that converts characters like newline and tab into
    visible sequences like \n and \t as it copies the string t to s. Write a function
    for the other direction as well, converting escape sequences into the real characters. */
+/*
+Tast cases:- 
+input  :       
+abc
+hello	world
+output:abc\nhello\tworld
+*/
 #include <stdio.h>
-
 #define LEN 100
-
 void escape(char s[], char t[]);
-//void r_escape (char s[], char t[]);
-
 void main()
 {
   char s[LEN], t[LEN],  c;
